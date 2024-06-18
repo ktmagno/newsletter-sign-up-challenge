@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 900px;
+  min-height: fit-content;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-side {
+  padding: 40px;
+  line-height: 1.5;
+}
+
+.left-side h1 {
+  font-size: 35px;
+  transform: scale(1.6, 1.6);
+  text-align: left;
+  justify-content: left;
+  margin: 30px 0px 0px 85px;
+  color: hsl(234, 29%, 20%);
+}
+
+.left-side p {
+  margin: 15px 0px 0px -8px;
+  padding: 5px;
+  color: hsl(234, 29%, 20%);
+}
+
+.offers {
+  padding: 20px;
+}
+
+ul {
+  list-style-image: url("./assets/images/icon-list.svg");
+  list-style-position: outside;
+  margin-left: 5px;
+}
+
+li > span {
+  padding-left: 17px;
+  line-height: 2.3;
+  position: relative;
+  top: -4px;
+}
+
+.user-email {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.user-email label {
+  font-size: 11px;
+  font-weight: bold;
+  padding-bottom: 7px;
+  color: hsl(234, 29%, 20%);
+}
+
+.user-email input {
+  padding: 18px;
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 6px;
+  display: block;
+  width: 95%;
+}
+
+.left-side button {
+  margin-top: 25px;
+  width: 95%;
+  padding: 18px;
+  background-color: hsl(234, 29%, 20%);
+  border-radius: 6px;
+  border-style: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  box-shadow: -3px 10px 20px hsl(4, 86%, 80%);
+}
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  padding: 45px;
+  max-width: 350px;
+  min-height: fit-content;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.success-message img {
+  float: left;
+  width: 45px;
+  margin: -10px 0px 40px 0px;
+}
+
+.success-message h1 {
+  font-size: 25px;
+  transform: scale(1.6, 1.6);
+  line-height: normal;
+  margin-left: 60px;
+}
+
+.success-message p {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.success-message button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 18px;
+  background-color: hsl(234, 29%, 20%);
+  border-radius: 6px;
+  border-style: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error-message p {
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  margin: -80px 0px 0px 255px;
+  color: hsl(4, 100%, 67%);
+}
+
+.input-field {
+  padding: 18px;
+  border: 1px solid hsl(4, 100%, 67%);
+  background-color: hsl(4, 100%, 67%, 0.2);
+  border-radius: 6px;
+  display: block;
+  width: 95%;
+  color: hsla(0, 100%, 67%, 0.989);
+}
+
+.attribution {
+  font-size: 11px;
+  color: white;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 800px) {
+  .right-side img {
+    display: none;
+  }
+
+  .newsletter {
+    width: 500px;
+    min-height: fit-content;
+  }
+}
+
+@media (max-width: 435px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .newsletter {
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
+    background-image: url(./assets/images/illustration-mobile.svg);
+    background-repeat: no-repeat;
+  }
+
+  .left-side h1 {
+    font-size: 25px;
+    margin: 270px 0px 0px 35px;
+  }
+
+  .left-side p {
+    margin: 20px 0px 0px -35px;
+    width: 120%;
+  }
+
+  .offers {
+    padding: 20px;
+    width: 120%;
+  }
+
+  ul {
+    margin-left: -20px;
+  }
+
+  li > span {
+    padding-left: 5px;
+    line-height: 2;
+  }
+
+  .user-email {
+    margin-left: -20px;
+  }
+
+  .user-email input {
+    width: 100%;
+  }
+
+  .left-side button {
+    margin-left: -20px;
+    margin-bottom: 40px;
+    width: 108%;
+  }
+
+  .error-message p {
+    margin: -80px 0px 0px 170px;
+  }
+
+  .success-message {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .success-message img {
+    width: 60px;
+    margin-left: -250px;
+  }
+
+  .success-message h1 {
+    font-size: 25px;
+    transform: scale(1.6, 1.6);
+    line-height: normal;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  .success-message p {
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: -20px;
+  }
+
+  .success-message button {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 682px) {
+  .success-message {
+    width: 100%;
+  }
+}
