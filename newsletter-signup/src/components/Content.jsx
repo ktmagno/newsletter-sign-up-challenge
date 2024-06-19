@@ -7,7 +7,10 @@ function Content(props) {
   const [email, setEmail] = useState("");
   const [successPage, setSuccessPage] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
-  const [view, setView] = useState(window.innerWidth);
+  const [mobileView, setMobileView] = useState({
+    width: 375,
+    height: 284,
+  });
 
   const handleSubscribe = (e) => {
     e.preventDefault();
@@ -24,7 +27,7 @@ function Content(props) {
       e.stopPropagation();
       setSuccessPage(true);
       console.log("form submission success!");
-    } else if (!pattern.test(email) && email !== "") {
+    } else if (!pattern.test(email) && email !== " ") {
       e.stopPropagation();
       setErrorMessage(true);
       console.log("form submission unsuccessful");
@@ -38,19 +41,23 @@ function Content(props) {
   };
 
   useEffect(() => {
-    const handleScreenSize = () => {
-      setView(window.innerWidth);
-    };
+    function handleMobileView() {
+      setMobileView({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
 
-    window.addEventListener("resize", handleScreenSize);
+    window.addEventListener("resize", handleMobileView);
+    handleMobileView();
 
     return () => {
-      window.removeEventListener("resize", handleScreenSize);
+      window.removeEventListener("resize", handleMobileView);
     };
   }, []);
 
   return successPage ? (
-    <Success name={email || "guest"} onCloseSuccess={handleCloseSuccess} />
+    <Success name={email} onCloseSuccess={handleCloseSuccess} />
   ) : (
     <div className="newsletter">
       <div className="left-side">
@@ -94,10 +101,15 @@ function Content(props) {
       </div>
 
       <div className="right-side">
-        <img
-          src={view >= 376 ? desktopIllustration : mobileIllustration}
-          alt="sign up"
-        />
+        {/* <img src={desktopIllustration} alt="sign up" /> */}
+        {/* <picture>
+          <source
+            srcset="../assets/images/illustration-mobile.svg"
+            media="(min-width: 50rem)"
+          />
+          <img src="../assets/images/illustration-desktop.svg" alt="graphics" />
+        </picture> */}
+        <img src={desktopIllustration} alt="sign up" />
       </div>
     </div>
   );
