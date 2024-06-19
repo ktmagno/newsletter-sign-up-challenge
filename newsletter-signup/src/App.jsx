@@ -1,14 +1,10 @@
 import Content from "./components/Content.jsx";
-import { useState } from "react";
-import Success from "./components/Success.jsx";
 import Footer from "./components/Footer.jsx";
 
-function App(props) {
-  const [show, setShow] = useState("true");
-
+function App() {
   return (
     <>
-      <div className="signup">{show ? <Content /> : <Success />}</div>;
+      <Content />
       <Footer />
     </>
   );
