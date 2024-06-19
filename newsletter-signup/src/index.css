@@ -9,7 +9,7 @@
 body {
   background-color: hsl(235, 18%, 26%);
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   height: 100vh;
   width: 100vw;
@@ -19,153 +19,148 @@ body {
 }
 
 .newsletter {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  width: 900px;
+  padding: 1.3rem;
+  width: 57rem;
   min-height: fit-content;
   background-color: hsl(0, 0%, 100%);
-  border-radius: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  border-radius: 1.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-side {
-  padding: 40px;
-  line-height: 1.5;
+  padding: 2.5rem;
+  line-height: 1.4;
 }
 
 .left-side h1 {
-  font-size: 35px;
+  font-size: 2.2rem;
   transform: scale(1.6, 1.6);
   text-align: left;
   justify-content: left;
-  margin: 30px 0px 0px 85px;
+  margin: 15px 0px 0px 85px;
   color: hsl(234, 29%, 20%);
 }
 
 .left-side p {
   margin: 15px 0px 0px -8px;
-  padding: 5px;
+  padding: 0.3rem;
   color: hsl(234, 29%, 20%);
 }
 
 .offers {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 ul {
   list-style-image: url("./assets/images/icon-list.svg");
   list-style-position: outside;
-  margin-left: 5px;
+  margin-left: 0.3rem;
 }
 
 li > span {
-  padding-left: 17px;
+  padding-left: 1rem;
   line-height: 2.3;
-  position: relative;
-  top: -4px;
 }
 
 .user-email {
-  margin-top: 12px;
+  margin-top: 0.3rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  box-sizing: border-box;
 }
 
 .user-email label {
-  font-size: 11px;
+  font-size: 0.7rem;
   font-weight: bold;
-  padding-bottom: 7px;
+  padding-bottom: 0.4rem;
   color: hsl(234, 29%, 20%);
 }
 
 .user-email input {
-  padding: 18px;
+  padding: 1.2rem;
   border: 1px solid hsl(231, 7%, 60%);
-  border-radius: 6px;
-  display: block;
+  border-radius: 0.5rem;
   width: 95%;
 }
 
 .left-side button {
-  margin-top: 25px;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
   width: 95%;
-  padding: 18px;
   background-color: hsl(234, 29%, 20%);
-  border-radius: 6px;
-  border-style: none;
   color: hsl(0, 0%, 100%);
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
+  border-style: none;
+  margin-top: 1.2rem;
 }
 
 button:hover {
   background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
-  box-shadow: -3px 10px 20px hsl(4, 86%, 80%);
+  box-shadow: -3px 5px 20px hsl(4, 82%, 73%);
 }
 
 .success-message {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  padding: 45px;
-  max-width: 350px;
+  padding: 2.8rem;
+  max-width: 22rem;
   min-height: fit-content;
   background-color: hsl(0, 0%, 100%);
-  border-radius: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .success-message img {
-  float: left;
-  width: 45px;
-  margin: -10px 0px 40px 0px;
+  justify-content: left;
+  align-items: left;
+  width: 2.8rem;
+  margin-bottom: 3rem;
+  margin-right: 14rem;
 }
 
 .success-message h1 {
-  font-size: 25px;
+  font-size: 1.5rem;
   transform: scale(1.6, 1.6);
-  line-height: normal;
-  margin-left: 60px;
+  line-height: 1;
+  margin-left: 3.7rem;
 }
 
 .success-message p {
-  font-size: 14px;
-  margin-top: 30px;
+  font-size: 0.7rem;
+  margin-top: 2rem;
+  line-height: 1.5;
 }
 
 .success-message button {
-  margin-top: 25px;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
   width: 100%;
-  padding: 18px;
   background-color: hsl(234, 29%, 20%);
-  border-radius: 6px;
-  border-style: none;
   color: hsl(0, 0%, 100%);
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
+  border-style: none;
+  margin-top: 2rem;
 }
 
 .error-message p {
-  font-size: 11px;
+  font-size: 0.7rem;
   font-weight: bold;
-  position: absolute;
-  margin: -80px 0px 0px 255px;
   color: hsl(4, 100%, 67%);
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  margin-top: -5rem;
+  margin-right: 0.8rem;
 }
 
-.input-field {
+/* .input-field {
   padding: 18px;
   border: 1px solid hsl(4, 100%, 67%);
   background-color: hsl(4, 100%, 67%, 0.2);
@@ -173,30 +168,31 @@ button:hover {
   display: block;
   width: 95%;
   color: hsla(0, 100%, 67%, 0.989);
-}
+} */
 
 .attribution {
-  font-size: 11px;
-  color: white;
+  font-size: 0.7rem;
   text-align: center;
+  color: white;
+  margin-top: 2rem;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(229, 49%, 82%);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 855px) {
   .right-side img {
     display: none;
   }
 
   .newsletter {
-    width: 500px;
+    width: 31.5rem;
     min-height: fit-content;
   }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 431px) {
   html,
   body {
     margin: 0;
@@ -205,39 +201,28 @@ button:hover {
   }
 
   .newsletter {
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     width: 100%;
     border-radius: 0;
     background-image: url(./assets/images/illustration-mobile.svg);
     background-repeat: no-repeat;
   }
 
+  .left-side {
+    padding: 0.8rem;
+  }
+
   .left-side h1 {
-    font-size: 25px;
-    margin: 270px 0px 0px 35px;
-  }
-
-  .left-side p {
-    margin: 20px 0px 0px -35px;
-    width: 120%;
-  }
-
-  .offers {
-    padding: 20px;
-    width: 120%;
-  }
-
-  ul {
-    margin-left: -20px;
+    font-size: 1.5rem;
+    margin-top: 18rem;
+    margin-left: 4.5rem;
   }
 
   li > span {
-    padding-left: 5px;
     line-height: 2;
-  }
-
-  .user-email {
-    margin-left: -20px;
   }
 
   .user-email input {
@@ -245,28 +230,21 @@ button:hover {
   }
 
   .left-side button {
-    margin-left: -20px;
-    margin-bottom: 40px;
-    width: 108%;
-  }
-
-  .error-message p {
-    margin: -80px 0px 0px 170px;
+    width: 100%;
   }
 
   .success-message {
-    margin: 0 auto;
-    padding: 0 auto;
-    width: 100%;
-    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    border-radius: 0;
   }
 
   .success-message img {
     width: 60px;
-    margin-left: -250px;
+    margin-left: -2rem;
   }
 
   .success-message h1 {
@@ -284,10 +262,19 @@ button:hover {
   }
 
   .success-message button {
-    width: 90%;
-    position: absolute;
+    width: 85%;
     bottom: 0;
-    margin-bottom: 40px;
+    position: absolute;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: black;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
   }
 }
 
