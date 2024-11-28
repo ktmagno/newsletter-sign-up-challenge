@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-newsletter-sign-up-using-react-vite-pSS6hhdSs-)
-- Live Site URL: [Netlify](https://fem-newsletter-signup-page.netlify.app/))
+- Live Site URL: [Netlify](https://fem-newsletter-signup-page.netlify.app/)
 
 ## My process
 
